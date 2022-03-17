@@ -70,19 +70,11 @@ namespace CalculatorConsoleApplication
                 Console.WriteLine("Apakah ingin mengulangi ? (y / t ) \n");
                 Console.Write("Pilihan Anda : ");
                 ulang = Console.ReadLine();
-                if (ulang == "y" )
+                if (ulang == "y" | ulang == "Y" )
                 {
                     goto awal;
                 }
-                else if (ulang == "Y")
-                {
-                    goto awal;
-                }
-                else if (ulang == "t")
-                {
-                    goto akhir;
-                }
-                else if (ulang == "T")
+                else if (ulang == "t" | ulang == "T")
                 {
                     goto akhir;
                 }
@@ -90,22 +82,14 @@ namespace CalculatorConsoleApplication
             Console.WriteLine("Apakah ingin mengulangi ? (y / t ) \n");
             Console.Write("Pilihan Anda : ");
             ulang = Console.ReadLine();
-            if (ulang == "y")
-            {
-                goto awal;
-            }
-            else if (ulang == "Y")
-            {
-                goto awal;
-            }
-            else if (ulang == "t")
-            {
-                goto akhir;
-            }
-            else if (ulang == "T")
-            {
-                goto akhir;
-            }
+            if (ulang == "y" | ulang == "Y" )
+                {
+                    goto awal;
+                }
+                else if (ulang == "t" | ulang == "T")
+                {
+                    goto akhir;
+                }
         akhir:
             Console.WriteLine("\nTekan sembarang key untuk keluar");
             Console.ReadKey();
